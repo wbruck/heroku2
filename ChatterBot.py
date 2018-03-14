@@ -10,7 +10,7 @@ access_token_secret = "7FS2b2i3UMoEvY1wAP2ncjJ78ZheunyhHK8JpIqBy3cPl"
 
 # Quotes to Tweet
 quote_list = [
-    "Quote 1",
+    "Quote 1.1",
     "Quote 2",
     "Quote 3"]
 
@@ -31,8 +31,9 @@ def QuoteItUp(quote_num):
 
 
 # Set timer to run every minute
-counter = 0
+counter = 1
 
 while(counter < len(quote_list)):
     QuoteItUp(counter)
+    counter+= 1
     time.sleep(60)
